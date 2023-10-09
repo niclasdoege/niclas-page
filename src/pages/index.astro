@@ -1,6 +1,9 @@
 ---
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+import Navigation from '../Components/Navigation.astro';
+import Footer from '../Components/Footer.astro'
+
+const pageTitle = 'Niclas Astro Seite'
 ---
 
 <html lang="en">
@@ -9,11 +12,12 @@ import Navigation from '../components/Navigation.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<Navigation />
-		<h1>Niclas Astro Webseite</h1>
+		<h1>{pageTitle}</h1>
 		<p>hier gibt es noch nicht viel</p>
+		<Footer />
 	</body>
 </html>
